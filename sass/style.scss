@@ -26,3 +26,7 @@ $body-color:$gapaiptn-900 !default;
 
 // Import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    min-height: 100vh;
+}
