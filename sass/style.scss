@@ -30,3 +30,16 @@ $body-color:$gapaiptn-900 !default;
 body {
     min-height: 100vh;
 }
+
+/*
+ * Backgound image
+ */
+
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
