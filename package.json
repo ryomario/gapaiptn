@@ -1,0 +1,14 @@
+{
+  "name": "gapaiptn",
+  "version": "1.0.0",
+  "description": "Web Apps for Educational Community Service GAPAIPTN with Supporting Rationalize Machine Learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
