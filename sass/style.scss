@@ -1,1 +1,28 @@
+@import '../node_modules/bootstrap/scss/functions';
+$gapaiptn:   #F19E00 !default;
+$blue:      #0d6efd !default;
+
+$gapaiptn-50: tint-color($gapaiptn, 90%) !default;
+$gapaiptn-100: tint-color($gapaiptn, 80%) !default;
+$gapaiptn-200: tint-color($gapaiptn, 60%) !default;
+$gapaiptn-300: tint-color($gapaiptn, 40%) !default;
+$gapaiptn-400: tint-color($gapaiptn, 20%) !default;
+$gapaiptn-500: $gapaiptn !default;
+$gapaiptn-600: shade-color($gapaiptn, 20%) !default;
+$gapaiptn-700: shade-color($gapaiptn, 40%) !default;
+$gapaiptn-800: shade-color($gapaiptn, 60%) !default;
+$gapaiptn-900: shade-color($gapaiptn, 80%) !default;
+
+// init color variables in bootstrap by default values
+$primary:   $gapaiptn !default;
+$secondary: $blue !default;
+
+$light:     $gapaiptn-200 !default;
+$dark:      $gapaiptn-900 !default;
+
+// Body styles to init default values
+$body-bg:   $gapaiptn-50 !default;
+$body-color:$gapaiptn-900 !default;
+
+// Import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
