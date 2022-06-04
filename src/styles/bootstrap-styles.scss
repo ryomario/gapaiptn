@@ -1,0 +1,122 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "bootstrap/scss/functions"; // Required
+
+// Global settings
+$enable-shadows: true;
+
+/*
+ * Font settings START
+ */
+
+// Import font
+// @import "./fonts";
+
+// Apply font
+$font-family-sans-serif: Roboto, system-ui;
+
+/* 
+ * Font settings END
+ */
+
+// Color settings START
+
+$gapaiptn: #f19e00;
+$gapaiptn-2: #0d6efd;
+
+// Color tint & shade
+$gapaiptn-50: tint-color($gapaiptn, 90%);
+$gapaiptn-100: tint-color($gapaiptn, 80%);
+$gapaiptn-200: tint-color($gapaiptn, 60%);
+$gapaiptn-300: tint-color($gapaiptn, 40%);
+$gapaiptn-400: tint-color($gapaiptn, 20%);
+$gapaiptn-500: $gapaiptn;
+$gapaiptn-600: shade-color($gapaiptn, 20%);
+$gapaiptn-700: shade-color($gapaiptn, 40%);
+$gapaiptn-800: shade-color($gapaiptn, 60%);
+$gapaiptn-900: shade-color($gapaiptn, 80%);
+
+// Override color primary from bootstrap
+$primary: $gapaiptn;
+$secondary: $gapaiptn-2;
+
+$light: $gapaiptn-200;
+$dark: $gapaiptn-900;
+
+// Override body styles
+$body-bg: $gapaiptn-50;
+$body-color: $gapaiptn-900;
+
+// Color settings END
+
+// Import variables from bootstrap without changes the variables above
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+@import "bootstrap/scss/utilities"; // Required
+
+// Layout & components
+@import "bootstrap/scss/root"; // Required
+@import "bootstrap/scss/reboot"; // Required
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas";
+// @import "bootstrap/scss/placeholders";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack

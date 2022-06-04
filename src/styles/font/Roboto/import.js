@@ -1,0 +1,13 @@
+import './Roboto-ThinItalic.ttf';
+import './Roboto-LightItalic.ttf';
+import './Roboto-Italic.ttf';
+import './Roboto-MediumItalic.ttf';
+import './Roboto-BoldItalic.ttf';
+import './Roboto-BlackItalic.ttf';
+import './Roboto-Thin.ttf';
+import './Roboto-Light.ttf';
+import './Roboto-Regular.ttf';
+import './Roboto-Medium.ttf';
+import './Roboto-Bold.ttf';
+import './Roboto-Black.ttf';
+import './index.css';
