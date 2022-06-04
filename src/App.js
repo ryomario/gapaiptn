@@ -2,47 +2,55 @@ import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './layouts/error-layouts/PageNotFound';
 
 import Header from './layouts/Header';
+import LandingPage, { ErrorLandingPage } from './layouts/landing-page/LandingPage';
+import RasionalisasiPage, { ErrorRasionalisasiPage } from './layouts/rasionalisasi-page/RasionalisasiPage';
 
-const links = [
-  {
-    key:"landing-page",
+const links = {
+  "landing-page":{
     href:"/",
-    name:"Home"
+    name:"Home",
+    isDeployed:true,
+    isDisabled:false,
   },
-  {
-    key:"rasionalisasi-page",
+  "rasionalisasi-page":{
     href:"/rasionalisasi",
-    name:"Rasionalize"
+    name:"Rasionalize",
+    isDeployed:false,
+    isDisabled:false,
   },
-  {
-    key:"event",
+  "event":{
     href:"/event",
-    name:"Event"
+    name:"Event",
+    isDeployed:false,
+    isDisabled:true,
   },
-  {
-    key:"artikel",
+  "artikel":{
     href:"/article",
-    name:"Article"
+    name:"Article",
+    isDeployed:false,
+    isDisabled:true,
   },
-  {
-    key:"forum",
+  "forum":{
     href:"/forum",
-    name:"Forum"
+    name:"Forum",
+    isDeployed:false,
+    isDisabled:true,
   },
-  {
-    key:"about",
+  "about":{
     href:"/about",
-    name:"About"
+    name:"About",
+    isDeployed:false,
+    isDisabled:true,
   },
-]
+}
 
 function App() {
   return (
     <div className="d-flex flex-column" style={{paddingTop: "60px"}}>
       <Header links={links}/>
       <Routes>
-        {/* <Route path='/' element={<LandingPage />} /> */}
-        {/* <Route path='/rasionalisasi' element={}/> */}
+        <Route path='/' element={links['landing-page'].isDeployed ? <LandingPage /> : <ErrorLandingPage/>} />
+        <Route path='/rasionalisasi' element={links['rasionalisasi-page'].isDeployed ? <RasionalisasiPage /> : <ErrorRasionalisasiPage/>}/>
         <Route path="*" index element={<PageNotFound />}/>
       </Routes>
     </div>

@@ -14,11 +14,14 @@ const Header = ({links}) => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto align-items-center">
                   {
-                    links.map(link => (
-                      <li key={link.key} className="nav-item">
-                        <NavLink to={link.href} className={linkClassName}>{link.name}</NavLink>
-                      </li>
-                    ))
+                    Object.keys(links).map(key => {
+                      const link=links[key];
+                      return (
+                        <li key={key} className="nav-item">
+                          <NavLink to={link.href} className={(arg)=>linkClassName(arg) + (link.isDisabled ? " disabled" : "")}>{link.name}</NavLink>
+                        </li>
+                      );
+                    })
                   }
                   <li className="nav-item">
                     <button role="button" className="btn btn-outline-dark btn-sm rounded-pill m-2">
