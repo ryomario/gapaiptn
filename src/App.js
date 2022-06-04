@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './layouts/error-layouts/PageNotFound';
+import Footer from './layouts/Footer';
 
 import Header from './layouts/Header';
 import LandingPage, { ErrorLandingPage } from './layouts/landing-page/LandingPage';
@@ -46,13 +47,14 @@ const links = {
 
 function App() {
   return (
-    <div className="d-flex flex-column" style={{paddingTop: "60px"}}>
+    <div className="d-flex flex-column" style={{paddingTop: "60px", minHeight: '100vh'}}>
       <Header links={links}/>
       <Routes>
         <Route path='/' element={links['landing-page'].isDeployed ? <LandingPage /> : <ErrorLandingPage/>} />
         <Route path='/rasionalisasi' element={links['rasionalisasi-page'].isDeployed ? <RasionalisasiPage /> : <ErrorRasionalisasiPage/>}/>
         <Route path="*" index element={<PageNotFound />}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
