@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import PageNotFound from './layouts/error-layouts/PageNotFound';
 
 import Header from './layouts/Header';
 
@@ -37,11 +38,12 @@ const links = [
 
 function App() {
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column" style={{paddingTop: "60px"}}>
       <Header links={links}/>
       <Routes>
         {/* <Route path='/' element={<LandingPage />} /> */}
         {/* <Route path='/rasionalisasi' element={}/> */}
+        <Route path="*" index element={<PageNotFound />}/>
       </Routes>
     </div>
   );
