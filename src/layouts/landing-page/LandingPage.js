@@ -3,7 +3,7 @@ import {Section1, Section2, Section3, Section4} from "./sections";
 
 const LandingPage = () => (
   <>
-    <Section1 style={{marginTop: '60px'}}/>
+    <Section1 btnLink="/rasionalisasi" style={{marginTop: '60px'}}/>
     <Section2 />
     <Section3 />
     <Section4 />
