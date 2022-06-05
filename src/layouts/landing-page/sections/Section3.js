@@ -1,7 +1,12 @@
 import bgV1 from './artikel/img/Image Article Preview vertical 1.jpg';
 import bgV2 from './artikel/img/Image Article Preview vertical 2.png';
+import bgH1 from './artikel/img/Image Article Preview.png';
+import bgH2 from './artikel/img/Image Article Preview-1.png';
+import bgH3 from './artikel/img/Image Article Preview-2.png';
+import bgH4 from './artikel/img/Image Article Preview-3.png';
 
 import {Articles as VArticles} from './artikel/vertikal';
+import {Articles as HArticles} from './artikel/horizontal';
 
 const articlesV = [
   {
@@ -24,7 +29,41 @@ const articlesV = [
     title: "Boleh Coba Kesempatan bagi Mahasiswa untuk Terbang ke Luar Negeri Nih",
     desc: "Indonesian International Student Mobility Awards (IISMA) sebagai salah satu program merdeka bagi mahasiswa untuk mendunia. Program ini dibuka setahun sekali dengan harapan selama 1 semester studi mahasiswa memperoleh ilmu, pengalaman, dan budaya baru untuk dunia kerja nantinya."
   }
-]
+];
+const articlesH = [
+  {
+    img: {
+      src: bgH1,
+      alt: "Artikel Wisuda"
+    },
+    title: "Wisuda",
+    desc: "Persiapkan dirimu sebelum berpisah."
+  },
+  {
+    img: {
+      src: bgH2,
+      alt: "Artikel Kerja"
+    },
+    title: "Kerja",
+    desc: "Langkah Menjadi Profesional"
+  },
+  {
+    img: {
+      src: bgH3,
+      alt: "Artikel Hobi"
+    },
+    title: "Hobi",
+    desc: "Berikan Hadiah Kepada Dirimu"
+  },
+  {
+    img: {
+      src: bgH4,
+      alt: "Artikel Fakta"
+    },
+    title: "Fakta",
+    desc: "Temukan Hal Baru"
+  },
+];
 
 const Section3 = () => (
   <section className="bg-image" style={{backgroundImage: 'url('+process.env.PUBLIC_URL+'/img/hand-drawn-abstract-shapes-wallpaper_23.png)', paddingTop: '100px'}}>
@@ -34,6 +73,7 @@ const Section3 = () => (
         <p>Mulai membaca artikel pilihan dan perluas cakrawala pengetahuan.</p>
       </div>
       <VArticles items={articlesV}/>
+      <HArticles items={articlesH}/>
     </div>
   </section>
 );
