@@ -22,4 +22,4 @@ const Section2 = () => (
   </section>
 );
 
-export default Section2;
+export {Section2};

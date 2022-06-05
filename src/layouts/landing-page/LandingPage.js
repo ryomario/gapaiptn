@@ -1,13 +1,12 @@
 import { useNavigate, NavLink } from "react-router-dom";
-import Section1 from "./sections/Section1";
-import Section2 from "./sections/Section2";
-import Section3 from "./sections/Section3";
+import {Section1, Section2, Section3, Section4} from "./sections";
 
 const LandingPage = () => (
   <>
     <Section1 style={{marginTop: '60px'}}/>
     <Section2 />
     <Section3 />
+    <Section4 />
   </>
 );
 

@@ -78,4 +78,4 @@ const Section3 = () => (
   </section>
 );
 
-export default Section3;
+export {Section3};
