@@ -1,7 +1,17 @@
 import { useNavigate, NavLink } from "react-router-dom";
+import FormCard from "./FormCard";
 
 const RasionalisasiPage = () => (
-  undefined
+  <>
+    <div className="bg-image h-100 fixed-top" style={{backgroundImage: "url("+process.env.PUBLIC_URL+"/img/hand-drawn-abstract-shapes-wallpaper_23.png)", zIndex: -999}}></div>
+    <div className="container-fluid px-lg-4">
+      <div className="row justify-content-center">
+        <div className="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 my-2">
+          <FormCard/>
+        </div>
+      </div>
+    </div>
+  </>
 );
 
 export const ErrorRasionalisasiPage = () => {

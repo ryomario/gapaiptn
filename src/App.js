@@ -16,7 +16,7 @@ const links = {
   "rasionalisasi-page":{
     href:"/rasionalisasi",
     name:"Rasionalize",
-    isDeployed:false,
+    isDeployed:true,
     isDisabled:false,
   },
   "event":{
