@@ -1,0 +1,8 @@
+.feedback .valid::before {
+  content: '\2714';
+  margin-inline-end: 1em;
+}
+.feedback .invalid::before {
+  content: '\2716';
+  margin-inline-end: 1em;
+}

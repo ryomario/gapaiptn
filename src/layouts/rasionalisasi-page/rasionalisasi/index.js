@@ -63,8 +63,8 @@ export default class Rasionalisasi extends Component {
     const prevStep = this.steps[step].prevStep;
     this.setState({'step':prevStep});
   }
-  handleChange = (name) => (event) => {
-    this.values[name] = event.target.value;
+  handleChange = (name) => (value) => {
+    this.values[name] = value;
     // Mungkin disini bisa disimpan datanya
   }
 
