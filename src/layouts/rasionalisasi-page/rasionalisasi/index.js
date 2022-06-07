@@ -1,5 +1,7 @@
 import { Component } from "react";
+import dataSiswa from './data/siswa.json';
 import FormStep1 from "./FormStep1";
+import FormStep2 from "./FormStep2";
 
 
 export default class Rasionalisasi extends Component {
@@ -15,7 +17,7 @@ export default class Rasionalisasi extends Component {
     "input-nilai":{
       iconClassName: "bi bi-award-fill",
       name: "Input nilai & prestasi",
-      isActive: false,
+      isActive: true,
       prevStep: "data-diri",
       nextStep: "pilih-prodi",
     },
@@ -38,10 +40,11 @@ export default class Rasionalisasi extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      step: "data-diri"
+      step: "input-nilai"
     }
 
-    this.values = {};
+    // this.values = {};
+    this.values = dataSiswa;
     if (props['values']) {
       this.values = props.values;
     }
@@ -50,8 +53,9 @@ export default class Rasionalisasi extends Component {
   nextStep = () => {
     const { step } = this.state;
     // Sebelum setState mungkin bisa lakukan validasi data
+    // Validasi data sudah di FormStep
 
-    console.log("step");
+    // console.log("step");
     const nextStep = this.steps[step].nextStep;
     this.steps[nextStep].isActive = true;
     this.setState({'step':nextStep});
@@ -88,12 +92,19 @@ export default class Rasionalisasi extends Component {
   FormStep = () => {
     switch (this.state.step) {
       case 'data-diri': return (
-        <FormStep1 nextStep={this.nextStep} handleChange={this.handleChange}/>
+        <FormStep1 nextStep={this.nextStep} handleChange={this.handleChange} values={this.values}/>
       );
       case 'input-nilai': return (
-        <FormStep1 prevStep={this.prevStep} nextStep={this.nextStep} handleChange={this.handleChange} values={{'nama-siswa':"Mario"}}/>
+        <FormStep2 prevStep={this.prevStep} nextStep={this.nextStep} handleChange={this.handleChange} values={this.values}/>
       );
     }
+  }
+  isNextStepActive = () => {
+    const currStepKey = this.state.step;
+    const nextStepKey = this.steps[currStepKey].nextStep;
+    if (currStepKey === nextStepKey) return undefined;
+
+    return this.steps[nextStepKey].isActive;
   }
 
   render() {

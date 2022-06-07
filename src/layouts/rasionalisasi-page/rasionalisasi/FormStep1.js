@@ -2,7 +2,8 @@ import { Component } from "react";
 import AutoComplete from "./components/AutoComplete";
 import InputSelection from "./components/InputSelection";
 import InputText from "./components/InputText";
-import dataNPSN from './data-npsn.json';
+import dataNPSN from './data/npsn.json';
+import dataJurusan from './data/jurusan.json';
 
 export default class FormStep1 extends Component {
 
@@ -18,9 +19,10 @@ export default class FormStep1 extends Component {
       // 'jurusan-siswa-lalu':undefined,
       isValid:false,
     }
-    
-    if (props['values'])
-      this.state = props.values;
+    if (props['values'] !== undefined) {
+      this.state = props['values'];
+      this.state['isValid'] = this.isValid(this.state);
+    }
 
     this.handleChange = props.handleChange;
     this.next = props.nextStep;
@@ -56,7 +58,7 @@ export default class FormStep1 extends Component {
         }
         break;
       case 'jurusan-siswa':
-        if (this.state['jurusan-siswa'] != value){
+        if (this.state['jurusan-siswa'] !== value){
           // nextState['jurusan-siswa-lalu'] = value;
         }
         break;
@@ -156,28 +158,7 @@ export default class FormStep1 extends Component {
             name="jurusan-siswa"
             label="Jurusan Siswa"
             hint="Pilih salah satu"
-            options={[
-              {
-                value: "ipa",
-                label:"IPA",
-                selected:false,
-              },
-              {
-                value: "ips",
-                label:"IPS",
-                selected:false,
-              },
-              {
-                value: "bahasa",
-                label:"Bahasa",
-                selected:false,
-              },
-              {
-                value: "smk",
-                label:"SMK",
-                selected:false,
-              }
-            ]}
+            options={dataJurusan}
             handleValueChange={this.handleInputChange}
             lastVal={this.state['jurusan-siswa-lalu']}
             value={this.state['jurusan-siswa']}
