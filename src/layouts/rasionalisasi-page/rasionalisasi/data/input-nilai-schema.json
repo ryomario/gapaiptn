@@ -1,0 +1,36 @@
+{
+  "wajib":[
+    {
+      "name":"mtk",
+      "label":"Matematika",
+      "shortLabel":"MTK"
+    },
+    {
+      "name":"ind",
+      "label":"B. Indonesia",
+      "shortLabel":"IND"
+    },
+    {
+      "name":"ing",
+      "label":"B. Inggris",
+      "shortLabel":"ING"
+    }
+  ],
+  "ipa":[
+    {
+      "name":"fsk",
+      "label":"Fisika",
+      "shortLabel":"FSK"
+    },
+    {
+      "name":"kim",
+      "label":"Kimia",
+      "shortLabel":"KIM"
+    },
+    {
+      "name":"bio",
+      "label":"Biologi",
+      "shortLabel":"BIO"
+    }
+  ]
+}
