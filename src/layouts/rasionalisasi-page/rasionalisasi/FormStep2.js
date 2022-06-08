@@ -61,11 +61,11 @@ export default class FormStep2 extends Component {
     if (value === undefined){
       return {}
     }
-    if (value === ""){
-      return {isValid:false,messages:[(<span className="invalid">Nilai {label} tidak boleh kosong!</span>)]}
-    }
     if (isNaN(value)){
       return {isValid:false,messages:[(<span className="invalid">Nilai {label} harus berupa angka!</span>)]}
+    }
+    if (value === ""){
+      return {isValid:false,messages:[(<span className="invalid">Nilai {label} tidak boleh kosong!</span>)]}
     }
     if (value < 0 || value > 100) {
       return {isValid:false,messages:[(<span className="invalid">Nilai {label} tidak berada di interval 0 - 100!</span>)]}
@@ -105,7 +105,7 @@ export default class FormStep2 extends Component {
     schemaInputNilai['wajib'],
     schemaInputNilai[this.state['jurusan-siswa']]
   ]
-  inputNilai_nameGenerator = (semesterName,inputName) => inputName+'-'+semesterName;
+  inputNilai_nameGenerator = (semesterName,inputName) => semesterName+'-'+inputName;
 
   render() {
     return (
@@ -115,6 +115,7 @@ export default class FormStep2 extends Component {
             this.semesters.map(semester => (
               <InputNilaiSemester 
                 key={semester.idx}
+                autoFocusName={this.inputNilai_nameGenerator(this.semesters[0].name,this.inputSemester()[0][0].name)}
                 className="mb-2"
                 name={semester.name} 
                 nameGenerator={this.inputNilai_nameGenerator}
@@ -127,7 +128,33 @@ export default class FormStep2 extends Component {
           }
           <h3 className="text-uppercase">Prestasi</h3>
         </div>
+        <div className="d-flex mx-lg-4 mb-4 justify-content-between">
+          <button type="button" className="btn btn-danger" onClick={()=>this.props['prevStep']?.()}>
+            <i className="bi bi-caret-left-fill me-2"></i>
+            Sebelumnya
+          </button>
+          <this.Buttons/>
+        </div>
       </form>
     )
   }
+
+  Buttons = () => {
+    if (this.state.isValid) {
+      return (
+        <button type="submit" className="btn btn-dark">
+          Selanjutnya
+          <i className="bi bi-caret-right-fill ms-2"></i>
+        </button>
+      )
+    } else {
+      return (
+        <button type="button" className="btn btn-outline-dark disabled" disabled={true} title="Isi form dengan tepat untuk melanjutkan!">
+          Selanjutnya
+          <i className="bi bi-caret-right-fill ms-2"></i>
+        </button>
+      )
+    }
+  }
+
 }

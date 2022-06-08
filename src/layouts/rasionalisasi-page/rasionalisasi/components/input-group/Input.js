@@ -5,7 +5,7 @@ export const Input = (props) => {
   return (
     <>
       <span className="input-group-text">{props['shortLabel']?props['shortLabel']:props['label']}</span>
-      <input {...inputProps} className={"form-control "+props['className']+(isValid?" is-valid":isValid === false?" is-invalid":"")} placeholder={props['label']} />
+      <input {...inputProps} className={"form-control "+props['className']+(isValid?" is-valid":isValid === false?" is-invalid":"")} placeholder={props['label']} autoFocus={props['autoFocusName']===props['name']}/>
       {
         isValid == false?(
           <div className={"feedback invalid-feedback"}>
