@@ -3,6 +3,7 @@ import dataSiswa from './data/siswa.json';
 import FormStep1 from "./FormStep1";
 import FormStep2 from "./FormStep2";
 import FormStep3 from "./FormStep3";
+import StepHasil from "./StepHasil";
 
 
 export default class Rasionalisasi extends Component {
@@ -103,9 +104,9 @@ export default class Rasionalisasi extends Component {
       case 'pilih-prodi': return (
         <FormStep3 prevStep={this.prevStep} nextStep={this.nextStep} handleChange={this.handleChange} values={this.values}/>
       );
-      // case 'hasil-rasionalisasi': return (
-        // <FormStep3 prevStep={this.prevStep} nextStep={this.nextStep} handleChange={this.handleChange} values={this.values}/>
-      // );
+      case 'hasil-rasionalisasi': return (
+        <StepHasil values={this.values}/>
+      );
     }
   }
   isNextStepActive = () => {
