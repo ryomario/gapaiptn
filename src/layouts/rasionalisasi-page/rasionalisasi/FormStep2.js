@@ -1,5 +1,7 @@
 import { Component } from "react";
+import InputFile from "./components/InputFile";
 import InputNilaiSemester from "./components/InputNilaiSemester";
+import InputPrestasi from "./components/InputPrestasi";
 import schemaInputNilai from './data/input-nilai-schema.json';
 
 export default class FormStep2 extends Component {
@@ -43,6 +45,25 @@ export default class FormStep2 extends Component {
 
     this.setState(nextState);
 
+  }
+  handlePrestasiChange = (prestasis) => {
+    // prestasi['name'] = name;
+    // const prestasis = this.state['prestasi']?this.state['prestasi']:{};
+
+    // prestasis[name] = prestasi;
+    
+
+    this.props['handleChange']?.('prestasi')(prestasis);
+
+    // console.log(prestasi);
+    // if (prestasi['isValid'] && prestasi['submited']){
+    //   if (prestasi['deleting']){
+    //     this.setState({'prestasi':undefined});
+    //   } else {
+    //     this.setState({'prestasi':prestasi});
+    //   }
+      
+    // }
   }
 
   isValid = (state) => {
@@ -108,6 +129,11 @@ export default class FormStep2 extends Component {
   inputNilai_nameGenerator = (semesterName,inputName) => semesterName+'-'+inputName;
 
   render() {
+    // const isValid = (prestasi) => {
+    //   if (prestasi && prestasi['file'] && prestasi['level']) return true;
+  
+    //   return false;
+    // }
     return (
       <form className="container-fluid" onSubmit={this.handleSubmit}>
         <div className="d-block text-start mx-lg-4 mb-5 shadow-lg bg-light border-start border-end border-dark border-5 p-4">
@@ -127,6 +153,8 @@ export default class FormStep2 extends Component {
             ))
           }
           <h3 className="text-uppercase">Prestasi</h3>
+          <InputPrestasi name="prestasi" handleChange={this.handlePrestasiChange} value={this.state['prestasi']}/>
+          {/* <InputFile name={()=>"prestasi"} header="Tambahkan Prestasi" handleChange={this.handlePrestasiChange} data={this.state['prestasi']} validation={isValid}/> */}
         </div>
         <div className="d-flex mx-lg-4 mb-4 justify-content-between">
           <button type="button" className="btn btn-danger" onClick={()=>this.props['prevStep']?.()}>

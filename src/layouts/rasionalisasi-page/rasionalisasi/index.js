@@ -17,7 +17,7 @@ export default class Rasionalisasi extends Component {
     "input-nilai":{
       iconClassName: "bi bi-award-fill",
       name: "Input nilai & prestasi",
-      isActive: true,
+      isActive: false,
       prevStep: "data-diri",
       nextStep: "pilih-prodi",
     },
@@ -40,7 +40,7 @@ export default class Rasionalisasi extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      step: "input-nilai"
+      step: "data-diri"
     }
 
     // this.values = {};

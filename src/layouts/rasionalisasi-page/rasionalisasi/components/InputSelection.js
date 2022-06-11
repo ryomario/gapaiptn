@@ -8,8 +8,9 @@ const Option = ({option}) => {
 }
 
 const InputSelection = (props) => {
+  const validation = props['validation']?props['validation']:(()=>{return {}});
   const value = props['value'] ? props.value:"";
-  const { isValid, messages } = props.validation(props.value);
+  const { isValid, messages } = validation(props.value);
   // console.log(props.value != props.lastVal);
   // if (props.value != props.lastVal) props['handleValueChange']?.(props.name,props.value);
   return (

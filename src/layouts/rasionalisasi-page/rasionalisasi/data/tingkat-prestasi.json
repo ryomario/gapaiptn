@@ -1,0 +1,22 @@
+[
+  {
+    "name":"kabupaten",
+    "value":1,
+    "label":"Kabupaten/Kota"
+  },
+  {
+    "name":"provinsi",
+    "value":2,
+    "label":"Provinsi"
+  },
+  {
+    "name":"nasional",
+    "value":3,
+    "label":"Nasional"
+  },
+  {
+    "name":"internasional",
+    "value":4,
+    "label":"Internasional"
+  }
+]
