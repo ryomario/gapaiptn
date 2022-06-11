@@ -14,6 +14,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm start-api`
+
+Runs the API that powered by Python Flask.\
+API dapat diakses dari [hppt://localhost:5000](http://localhost:5000) untuk mendapat respon-nya, setiap rute harus diakses dengan port `5000`.\
+
+Sebelum menjalankan command ini pastikan syarat dependencies untuk Python sudah diinstall.
+
+- flask=2.0.3
+- python-dotenv=0.20.0
+
+```
+pip install flask=2.0.3 python-dotenv=0.20.0
+```
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
