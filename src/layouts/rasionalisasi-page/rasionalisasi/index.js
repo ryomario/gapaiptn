@@ -69,6 +69,8 @@ export default class Rasionalisasi extends Component {
   }
   handleChange = (name) => (value) => {
     this.values[name] = value;
+
+    console.log(this.values);
     // Mungkin disini bisa disimpan datanya
   }
 

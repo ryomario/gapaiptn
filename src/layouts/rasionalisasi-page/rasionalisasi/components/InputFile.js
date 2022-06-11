@@ -224,7 +224,7 @@ const EditDataFile = (props) => {
     if (d['isValid'] && d['submited']) {
       props['handleChange']?.(d);
     }
-    console.log('data change',d);
+    // console.log('data change',d);
   },[data]);
 
   // const editMode = (isEdit,isSubmit = false) => {

@@ -39,6 +39,7 @@ export default class FormStep2 extends Component {
 
     // validasi
     this.validation[name] = this.validasiNilai(value,label)['isValid'];
+    console.log(this.validation);
     // console.log(nextState);
 
     nextState['isValid'] = this.isValid(nextState);
@@ -51,7 +52,7 @@ export default class FormStep2 extends Component {
     // const prestasis = this.state['prestasi']?this.state['prestasi']:{};
 
     // prestasis[name] = prestasi;
-    
+
 
     this.props['handleChange']?.('prestasi')(prestasis);
 
@@ -70,11 +71,12 @@ export default class FormStep2 extends Component {
     for (const s of this.semesters) {
       for (const g of this.inputSemester()) {
         for (const input of g) {
-          const name = this.inputNilai_nameGenerator(input['name'],s['name']);
+          const name = this.inputNilai_nameGenerator(s['name'],input['name']);
           if (!this.validation[name]) return false;
         }
       }
     }
+    return true;
   }
 
   validasiNilai = (value,label) => {
@@ -168,6 +170,7 @@ export default class FormStep2 extends Component {
   }
 
   Buttons = () => {
+    console.log(this.state.isValid);
     if (this.state.isValid) {
       return (
         <button type="submit" className="btn btn-dark">
