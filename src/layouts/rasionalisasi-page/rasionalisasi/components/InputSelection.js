@@ -1,9 +1,10 @@
 import { PropTypes } from "prop-types";
 import Feedbacks from "./Feedbacks";
 
-const Option = ({option}) => {
+const Option = ({option,optionName}) => {
+  const optionValueName = optionName?.['value']?optionName?.['value']:'value';
   return (
-    <option disabled={option.disabled} value={option['value']?option.value:""}>{option.label}</option>
+    <option disabled={option.disabled} value={option[optionValueName]?option[optionValueName]:""}>{option[optionName?.['label']||'label']}</option>
   );
 }
 
@@ -19,6 +20,7 @@ const InputSelection = (props) => {
       <select 
       className={"form-select"+(isValid ? " is-valid":isValid === false ? " is-invalid":"")}
       value={value} 
+      autoFocus={props['autoFocus']}
       onChange={(event) => props['handleValueChange']?.(event.target.name,event.target.value)}
       name={props.name} 
       required={props.required}
@@ -29,6 +31,7 @@ const InputSelection = (props) => {
             <Option
               key={idx}
               option={option} 
+              optionName={props['optionName']}
             />
           ))
         }

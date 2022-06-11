@@ -1,6 +1,6 @@
 export const Input = (props) => {
-  const {name,type,min,max,onChange} = props;
-  const inputProps = {name,type,min,max,onChange};
+  const {name,type,min,max,onChange,value,step} = props;
+  const inputProps = {name,type,min,max,onChange,value,step};
   const {isValid,messages} = props['validation']?props['validation']:{};
   return (
     <>

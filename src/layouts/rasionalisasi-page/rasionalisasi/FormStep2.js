@@ -15,6 +15,7 @@ export default class FormStep2 extends Component {
     }
     if (props['values'] !== undefined) {
       this.state = props['values'];
+      // console.log("form 2",this.state);
       this.state['isValid'] = this.isValid(this.state);
     }
 
@@ -24,6 +25,7 @@ export default class FormStep2 extends Component {
   }
 
   handleSubmit = (event) => {
+    // console.log('submit',this.state.isValid);
     if (this.state.isValid){
       this.props['nextStep']?.();
     } else {
@@ -38,8 +40,8 @@ export default class FormStep2 extends Component {
     const nextState = {[name]:value};
 
     // validasi
-    this.validation[name] = this.validasiNilai(value,label)['isValid'];
-    console.log(this.validation);
+    // this.validation[name] = this.validasiNilai(value,label)['isValid'];
+    // console.log(this.validation);
     // console.log(nextState);
 
     nextState['isValid'] = this.isValid(nextState);
@@ -72,7 +74,8 @@ export default class FormStep2 extends Component {
       for (const g of this.inputSemester()) {
         for (const input of g) {
           const name = this.inputNilai_nameGenerator(s['name'],input['name']);
-          if (!this.validation[name]) return false;
+          const isValid = this.validasiNilai(this.state[name],name)['isValid'];
+          if (!isValid) return false;
         }
       }
     }
@@ -170,7 +173,6 @@ export default class FormStep2 extends Component {
   }
 
   Buttons = () => {
-    console.log(this.state.isValid);
     if (this.state.isValid) {
       return (
         <button type="submit" className="btn btn-dark">

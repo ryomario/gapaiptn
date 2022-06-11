@@ -1,0 +1,423 @@
+{
+  "001008":[
+    {
+        "kode": "63211",
+        "nama": "Administrasi Bisnis",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "63201",
+        "nama": "Administrasi Publik",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "63202",
+        "nama": "Administrasi Publik (Kampus Kab Rembang)",
+        "akreditasi": "Baik"
+    },
+    {
+        "kode": "54201",
+        "nama": "Agribisnis",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "54211",
+        "nama": "Agroekoteknologi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "54243",
+        "nama": "Akuakultur",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "62201",
+        "nama": "Akuntansi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "82201",
+        "nama": "Antropologi Sosial",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "23201",
+        "nama": "Arsitektur",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "79204",
+        "nama": "Bahasa dan Kebudayaan Jepang",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "46201",
+        "nama": "Biologi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "54207",
+        "nama": "Bioteknologi",
+        "akreditasi": "Baik"
+    },
+    {
+        "kode": "60201",
+        "nama": "Ekonomi ",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "60202",
+        "nama": "Ekonomi Islam",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "48201",
+        "nama": "Farmasi",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "45201",
+        "nama": "Fisika",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "13211",
+        "nama": "Gizi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "64201",
+        "nama": "Hubungan Internasional",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "74201",
+        "nama": "Hukum",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "54241",
+        "nama": "Ilmu Kelautan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "70201",
+        "nama": "Ilmu Komunikasi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "65201",
+        "nama": "Ilmu Pemerintahan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "71201",
+        "nama": "Ilmu Perpustakaan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "55201",
+        "nama": "Informatika",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "11201",
+        "nama": "Kedokteran",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "12201",
+        "nama": "Kedokteran Gigi",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "14201",
+        "nama": "Keperawatan",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "13201",
+        "nama": "Kesehatan Masyarakat",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "47201",
+        "nama": "Kimia",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "61201",
+        "nama": "Manajemen",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "54242",
+        "nama": "Manajemen Sumber Daya Perairan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "44201",
+        "nama": "Matematika",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "38201",
+        "nama": "Oseanografi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "35201",
+        "nama": "Perencanaan Wilayah Dan Kota",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "54246",
+        "nama": "Perikanan Tangkap",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "54231",
+        "nama": "Peternakan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "73201",
+        "nama": "Psikologi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "79201",
+        "nama": "Sastra Indonesia",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "79202",
+        "nama": "Sastra Inggris",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "80201",
+        "nama": "Sejarah",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "49201",
+        "nama": "Statistika",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "20201",
+        "nama": "Teknik Elektro",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "29201",
+        "nama": "Teknik Geodesi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "34201",
+        "nama": "Teknik Geologi",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "26201",
+        "nama": "Teknik Industri",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "24201",
+        "nama": "Teknik Kimia",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "56201",
+        "nama": "Teknik Komputer",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "25201",
+        "nama": "Teknik Lingkungan",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "21201",
+        "nama": "Teknik Mesin",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "36201",
+        "nama": "Teknik Perkapalan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "22201",
+        "nama": "Teknik Sipil",
+        "akreditasi": "Unggul"
+    },
+    {
+        "kode": "54244",
+        "nama": "Teknologi Hasil Perikanan",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "41221",
+        "nama": "Teknologi Pangan",
+        "akreditasi": "A"
+    }
+  ],
+  "051014":[
+    {
+        "kode": "54201",
+        "nama": "Agribisnis",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "54211",
+        "nama": "Agroteknologi",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "62201",
+        "nama": "Akuntansi",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "60201",
+        "nama": "Ekonomi Pembangunan",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "63211",
+        "nama": "Ilmu Administrasi Bisnis",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "64201",
+        "nama": "Ilmu Hubungan Internasional",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "70201",
+        "nama": "Ilmu Komunikasi",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "61201",
+        "nama": "Manajemen",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "33201",
+        "nama": "Teknik Geofisika",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "34201",
+        "nama": "Teknik Geologi",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "26201",
+        "nama": "Teknik Industri",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "55201",
+        "nama": "Teknik Informatika",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "24201",
+        "nama": "Teknik Kimia",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "25201",
+        "nama": "Teknik Lingkungan",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "32201",
+        "nama": "Teknik Perminyakan",
+        "akreditasi": "-"
+    },
+    {
+        "kode": "31201",
+        "nama": "Teknik Pertambangan",
+        "akreditasi": "-"
+    }
+  ],
+  "031035":[
+    {
+        "kode": "62201",
+        "nama": "Akuntansi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "13211",
+        "nama": "Ilmu Gizi",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "64201",
+        "nama": "Ilmu Hubungan Internasional",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "74201",
+        "nama": "Ilmu Hukum",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "14201",
+        "nama": "Ilmu Keperawatan",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "70201",
+        "nama": "Ilmu Komunikasi",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "13201",
+        "nama": "Kesehatan Masyarakat",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "61201",
+        "nama": "Manajemen",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "11201",
+        "nama": "Pendidikan Dokter",
+        "akreditasi": "A"
+    },
+    {
+        "kode": "57201",
+        "nama": "Sistem Informasi",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "26201",
+        "nama": "Teknik Industri",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "55201",
+        "nama": "Teknik Informatika",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "21201",
+        "nama": "Teknik Mesin",
+        "akreditasi": "B"
+    },
+    {
+        "kode": "36201",
+        "nama": "Teknik Perkapalan",
+        "akreditasi": "B"
+    }
+  ]
+}

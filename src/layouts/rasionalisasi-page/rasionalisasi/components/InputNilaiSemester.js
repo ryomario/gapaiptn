@@ -19,6 +19,7 @@ const InputNilaiSemester = (props) => {
                   type="number"
                   min="0"
                   max="100"
+                  step="any"
                   autoFocusName={props['autoFocusName']}
                   name={nameGenerator(props['name'],input['name'])} 
                   label={input['label']} 
