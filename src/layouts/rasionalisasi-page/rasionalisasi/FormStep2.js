@@ -146,7 +146,7 @@ export default class FormStep2 extends Component {
             this.semesters.map(semester => (
               <InputNilaiSemester 
                 key={semester.idx}
-                autoFocusName={this.inputNilai_nameGenerator(this.semesters[0].name,this.inputSemester()[0][0].name)}
+                // autoFocusName={this.inputNilai_nameGenerator(this.semesters[0].name,this.inputSemester()[0][0].name)}
                 className="mb-2"
                 name={semester.name} 
                 nameGenerator={this.inputNilai_nameGenerator}

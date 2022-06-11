@@ -116,6 +116,10 @@ export default class Rasionalisasi extends Component {
     return this.steps[nextStepKey].isActive;
   }
 
+  componentDidUpdate(){
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div id="rasionalisasi">

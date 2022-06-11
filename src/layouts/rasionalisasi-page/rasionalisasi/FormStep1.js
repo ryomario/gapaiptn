@@ -105,7 +105,7 @@ export default class FormStep1 extends Component {
             value={this.state['nama-siswa']}
             required={true}
             validation={this.validasiNama}
-            autoFocus={true}
+            // autoFocus={true}
           />
           <InputText
             className="mb-3"
