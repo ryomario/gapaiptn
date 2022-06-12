@@ -1,7 +1,7 @@
 import time
-from wsgiref import headers
+# from wsgiref import headers
 from flask import Flask, request, jsonify
-import requests
+# import requests
 from flask_cors import cross_origin, CORS
 import joblib
 
