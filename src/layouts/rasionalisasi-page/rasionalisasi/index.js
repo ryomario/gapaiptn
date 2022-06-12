@@ -1,9 +1,11 @@
 import { Component } from "react";
+import axios from "axios";
 import dataSiswa from './data/siswa.json';
 import FormStep1 from "./FormStep1";
 import FormStep2 from "./FormStep2";
 import FormStep3 from "./FormStep3";
 import StepHasil from "./StepHasil";
+
 
 
 export default class Rasionalisasi extends Component {
@@ -49,7 +51,11 @@ export default class Rasionalisasi extends Component {
     this.values = dataSiswa;
     if (props['values']) {
       this.values = props.values;
+
+      
     }
+
+    
   }
 
   nextStep = () => {
@@ -72,7 +78,7 @@ export default class Rasionalisasi extends Component {
   handleChange = (name) => (value) => {
     this.values[name] = value;
 
-    console.log(this.values);
+    // console.log(this.values);
     // Mungkin disini bisa disimpan datanya
   }
 
@@ -104,9 +110,35 @@ export default class Rasionalisasi extends Component {
       case 'pilih-prodi': return (
         <FormStep3 prevStep={this.prevStep} nextStep={this.nextStep} handleChange={this.handleChange} values={this.values}/>
       );
-      case 'hasil-rasionalisasi': return (
-        <StepHasil values={this.values}/>
-      );
+      case 'hasil-rasionalisasi': 
+        // const req = getRequestData({...this.values});
+
+        // if (req) {
+        //   const reqOptions = {
+        //     method: 'POST',
+        //     headers: {'Content-Type':'application/json'},
+        //     body: JSON.stringify(req)
+        //   };
+
+        //   fetch('http://localhost:5000/rasionalisasi',reqOptions)
+        //     .then(response => response.json())
+        //     .then(data => {
+        //       console.log(data);
+        //       this.setState({'hasil':data});
+        //     });
+          
+          // axios.post('http://localhost:5000/rasionalisasi',req)
+          //   .then((response) => {
+          //     console.log(response.data);
+          //     this.setState({'hasil':response.data});
+          //   })
+          //   .catch((error) => {
+          //     console.log(error);
+          //   });
+        // }
+        return (
+          <StepHasil values={this.values} hasil={this.state['hasil']}/>
+        );
     }
   }
   isNextStepActive = () => {
@@ -122,6 +154,7 @@ export default class Rasionalisasi extends Component {
   }
 
   render() {
+    console.log(this.values);
     return (
       <div id="rasionalisasi">
         <this.ProgressBar steps={this.steps}/>

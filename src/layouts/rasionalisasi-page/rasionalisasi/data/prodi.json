@@ -13,7 +13,7 @@
     {
         "kode": "63202",
         "nama": "Administrasi Publik (Kampus Kab Rembang)",
-        "akreditasi": "Baik"
+        "akreditasi": "B"
     },
     {
         "kode": "54201",
@@ -58,7 +58,7 @@
     {
         "kode": "54207",
         "nama": "Bioteknologi",
-        "akreditasi": "Baik"
+        "akreditasi": "B"
     },
     {
         "kode": "60201",
@@ -118,7 +118,7 @@
     {
         "kode": "55201",
         "nama": "Informatika",
-        "akreditasi": "-"
+        "akreditasi": "A"
     },
     {
         "kode": "11201",
@@ -133,7 +133,7 @@
     {
         "kode": "14201",
         "nama": "Keperawatan",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "13201",
@@ -168,7 +168,7 @@
     {
         "kode": "35201",
         "nama": "Perencanaan Wilayah Dan Kota",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "54246",
@@ -208,7 +208,7 @@
     {
         "kode": "20201",
         "nama": "Teknik Elektro",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "29201",
@@ -223,12 +223,12 @@
     {
         "kode": "26201",
         "nama": "Teknik Industri",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "24201",
         "nama": "Teknik Kimia",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "56201",
@@ -238,7 +238,7 @@
     {
         "kode": "25201",
         "nama": "Teknik Lingkungan",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "21201",
@@ -253,7 +253,7 @@
     {
         "kode": "22201",
         "nama": "Teknik Sipil",
-        "akreditasi": "Unggul"
+        "akreditasi": "C"
     },
     {
         "kode": "54244",
@@ -270,82 +270,82 @@
     {
         "kode": "54201",
         "nama": "Agribisnis",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "54211",
         "nama": "Agroteknologi",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "62201",
         "nama": "Akuntansi",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "60201",
         "nama": "Ekonomi Pembangunan",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "63211",
         "nama": "Ilmu Administrasi Bisnis",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "64201",
         "nama": "Ilmu Hubungan Internasional",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "70201",
         "nama": "Ilmu Komunikasi",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "61201",
         "nama": "Manajemen",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "33201",
         "nama": "Teknik Geofisika",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "34201",
         "nama": "Teknik Geologi",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "26201",
         "nama": "Teknik Industri",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "55201",
         "nama": "Teknik Informatika",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "24201",
         "nama": "Teknik Kimia",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "25201",
         "nama": "Teknik Lingkungan",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "32201",
         "nama": "Teknik Perminyakan",
-        "akreditasi": "-"
+        "akreditasi": "C"
     },
     {
         "kode": "31201",
         "nama": "Teknik Pertambangan",
-        "akreditasi": "-"
+        "akreditasi": "C"
     }
   ],
   "031035":[

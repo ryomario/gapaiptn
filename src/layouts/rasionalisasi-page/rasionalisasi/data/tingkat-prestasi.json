@@ -10,13 +10,8 @@
     "label":"Provinsi"
   },
   {
-    "name":"nasional",
+    "name":"negara",
     "value":3,
-    "label":"Nasional"
-  },
-  {
-    "name":"internasional",
-    "value":4,
-    "label":"Internasional"
+    "label":"Nasional/Internasional"
   }
 ]
