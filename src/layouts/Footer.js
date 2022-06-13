@@ -1,10 +1,12 @@
+import logo from '../images/Logo icon & teks.png';
+
 const Footer = () => (
   <footer className="text-center text-lg-start bg-light text-muted mt-auto">
       <section className="ps-4 pe-4 pt-4">
           <div className="container-fluid">
               <div className="row mt-3">
                   <div className="col-lg-3 text-center mb-4">
-                      <img src={process.env.PUBLIC_URL+"/img/Logo icon & teks.png"} alt="GapaiPTN" width="100px" />
+                      <img src={logo} alt="GapaiPTN" width="100px" />
                       <div className="d-flex flex-wrap mt-2 justify-content-center">
                           <a 
                           className="btn btn-primary btn-dark m-1"

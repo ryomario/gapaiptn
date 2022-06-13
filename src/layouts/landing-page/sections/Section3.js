@@ -5,6 +5,8 @@ import bgH2 from './artikel/img/Image Article Preview-1.png';
 import bgH3 from './artikel/img/Image Article Preview-2.png';
 import bgH4 from './artikel/img/Image Article Preview-3.png';
 
+import bgArticle from '../../../images/hand-drawn-abstract-shapes-wallpaper_23.png';
+
 import {Articles as VArticles} from './artikel/vertikal';
 import {Articles as HArticles} from './artikel/horizontal';
 
@@ -66,7 +68,7 @@ const articlesH = [
 ];
 
 const Section3 = () => (
-  <section className="bg-image" style={{backgroundImage: 'url('+process.env.PUBLIC_URL+'/img/hand-drawn-abstract-shapes-wallpaper_23.png)', paddingTop: '100px'}}>
+  <section className="bg-image" style={{backgroundImage: 'url('+bgArticle+')', paddingTop: '100px'}}>
     <div className="container-lg my-4">
       <div className="text-center">
         <h1 className="text-uppercase fw-bold text-decoration-underline mb-4">Artikel</h1>

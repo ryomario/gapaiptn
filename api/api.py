@@ -6,17 +6,17 @@ from flask_cors import cross_origin, CORS
 import joblib
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'rahasia umum'
-app.config['CORS_HEADERS'] = 'Content-Type'
+# app.config['SECRET_KEY'] = 'rahasia umum'
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
-cors = CORS(app, resources={r"/rasionalisasi":{"origins":"http://localhost:3000"}})
+# cors = CORS(app, resources={r"/api/rasionalisasi":{"origins":"http://localhost:3000"}})
 
-@app.route("/time")
+@app.route("/api/time")
 def get_time():
   return {'time':time.time()}
 
-@cross_origin(origins="localhost",headers=["Content-Type","Authorization"])
-@app.route("/rasionalisasi",methods=['POST'])
+# @cross_origin(origins="localhost",headers=["Content-Type","Authorization"])
+@app.route("/api/rasionalisasi",methods=['POST'])
 def rasionalisasi():
   print("request ",request.method)
   if request.method == 'POST':
@@ -51,9 +51,9 @@ def rasionalisasi():
         'prosentase-2':100,
       }
     )
-    response.headers.add("Access-Control-Allow-Origin","*")
+    # response.headers.add("Access-Control-Allow-Origin","*")
     return response
 
 
 if __name__ == "__main__":
-  app.run(host="0.0.0.0",port="5000", debug=True)
+  app.run(port=3030, debug=True)

@@ -159,8 +159,8 @@ export default class StepHasil extends Component {
           body: JSON.stringify(req)
         };
 
-        fetch('http://localhost:5000/rasionalisasi',reqOptions)
-          .then(response => response.json())
+        fetch('/api/rasionalisasi',reqOptions)
+          .then(response => {console.log(response);return response.json()})
           .then(data => {
             console.log(data);
             this.setState({'hasil':data});

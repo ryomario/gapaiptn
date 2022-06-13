@@ -47,6 +47,13 @@ export default class Rasionalisasi extends Component {
       step: "data-diri"
     }
 
+    fetch('/api/time')
+          .then(response => {console.log(response);return response.json()})
+          .then(data => {
+            console.log(data);
+            // this.setState({'hasil':data});
+        });
+
     // this.values = {};
     this.values = dataSiswa;
     if (props['values']) {
