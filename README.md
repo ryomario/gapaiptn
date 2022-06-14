@@ -2,6 +2,35 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+### Prepare
+
+```shell-script
+# clone repo
+git clone https://github.com/ryomario/gapaiptn.git
+
+# masuk ke folder 'gapaiptn'
+cd gapaiptn
+
+# install package NodeJS yang diperlukan
+npm i
+
+# buat conda environment
+conda env create -f api/flask-api.yml
+```
+
+### Running
+```shell-script
+# run front end
+npm start
+
+# run back end
+npm run start-api
+```
+
+> :warning: **Saat menjalankan project**: Pastikan back-end dan front-end sama-sama berjalan!
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,7 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm start-api`
+### `npm run start-api`
 
 Runs the API that powered by Python Flask.\
 API dapat diakses dari [hppt://localhost:5000](http://localhost:5000) untuk mendapat respon-nya, setiap rute harus diakses dengan port `5000`.\
@@ -23,9 +52,27 @@ Sebelum menjalankan command ini pastikan syarat dependencies untuk Python sudah 
 
 - flask=2.0.3
 - python-dotenv=0.20.0
+- flask-cors
+- dll. (sudah tersedia di file api/flask-api.yml)
 
 ```
 pip install flask=2.0.3 python-dotenv=0.20.0
+```
+Atau langsung buat conda environment
+```shell-script
+# masuk ke folder 'api'
+cd api
+
+# pastikan sudah terinstal anaconda
+conda -V
+# example output : conda 4.11.0
+
+# buat environment conda dari file 'flask-api.yml'
+conda env create -f flask-api.yml
+
+# pastikan masuk environment terlebih dahulu
+# sebelum menjalankan back-end
+conda activate flask-api
 ```
 
 ### `npm test`
