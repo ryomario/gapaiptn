@@ -46,7 +46,7 @@ You may also see any lint errors in the console.
 ### `npm run start-api`
 
 Runs the API that powered by Python Flask.\
-API dapat diakses dari [hppt://localhost:5000](http://localhost:5000) untuk mendapat respon-nya, setiap rute harus diakses dengan port `5000`.\
+API dapat diakses dari [hppt://localhost:3030](http://localhost:3030) untuk mendapat respon-nya, setiap rute harus diakses dengan port `3030`.\
 
 Sebelum menjalankan command ini pastikan syarat dependencies untuk Python sudah diinstall.
 
